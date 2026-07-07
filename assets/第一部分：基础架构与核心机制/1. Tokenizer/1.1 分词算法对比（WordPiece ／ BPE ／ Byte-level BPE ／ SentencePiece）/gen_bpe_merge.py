@@ -2,7 +2,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-OUT = "LLM_Technical_Notes_Resources/assets/第一部分：基础架构与核心机制/1. Tokenizer/1.1-bpe-merge.png"
+OUT = "LLM_Technical_Notes_Resources/assets/第一部分：基础架构与核心机制/1. Tokenizer/1.1 分词算法对比（WordPiece ／ BPE ／ Byte-level BPE ／ SentencePiece）/bpe-merge.png"
 
 # 经典 BPE 训练实例（语料: low=5, lower=2, newest=6, widest=3）
 # 初始符号集: {l,o,w,e,r,n,s,t,i,d, </w>} = 11
