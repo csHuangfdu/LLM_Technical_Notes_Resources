@@ -63,8 +63,8 @@ git add LLM_Technical_Notes_Resources && git commit -m "bump resources" && git p
 
 ## 注意事项
 
-- 本仓库须保持 **Public**，Notion 才能加载 `raw.githubusercontent.com` 上的图片。
-- 默认分支名（`main`/`master`）须与核心仓 `REPO_RAW_BASE` 中写的一致。
+- 本仓库须保持 **Public**，以便 Notion 能访问同步器生成的 GitHub Release Asset。
+- Release 上传凭据、仓库与发布配置由核心仓的 `src/github_release.py` 管理；不要手写 `raw.githubusercontent.com` 图片地址。
 - 本地若把资源仓克隆在别处，可设置环境变量 `NOTION_ASSETS_ROOT` 指向其
   `assets/` 目录（供脚本内部工具函数使用）。
 - md 引用路径必须**带** `assets/` 前缀（相对资源仓根目录，不是相对 `assets/` 目录本身），
